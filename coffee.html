@@ -91,28 +91,105 @@
       </div>
     </section>
 
-    <!-- Video guide and native sharing tools -->
-    <section class="section section--dark" aria-labelledby="coffee-tools-heading">
-      <div class="container">
-        <div class="section-heading"><div><span class="eyebrow">Learn and share</span><h2 id="coffee-tools-heading">Go deeper into the cup.</h2><p>A privacy-friendly video guide, plus simple sharing tools built into the site.</p></div></div>
-        <div class="plugin-grid">
-          <article class="plugin-card">
-            <iframe title="YouTube coffee tasting guide" src="https://www.youtube-nocookie.com/embed/kEZZCQTSSAg" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="plugin-copy"><h3>Video tasting guide</h3><p>An embedded YouTube privacy-enhanced player introduces aroma, acidity, sweetness and body.</p></div>
-          </article>
-          <article class="plugin-card share-panel">
-            <span class="badge">Made to pass along</span>
-            <h3>Share a good thing.</h3>
-            <p>Send the coffee collection to someone who’d love a better morning. This works with your browser’s native share sheet or copies the link.</p>
-            <div class="share-actions">
-              <button class="btn btn--dark" type="button" data-share-coffee aria-label="Share the Bean Boutique coffee collection">Share the collection <span aria-hidden="true">↗</span></button>
-              <button class="btn btn--outline" type="button" data-share-email>Send by email</button>
-            </div>
-            <p class="share-status" data-share-status aria-live="polite"></p>
-          </article>
-        </div>
+    <!-- Coffee Selection Plugins: YouTube + Spotify -->
+<section class="section section--dark" aria-labelledby="coffee-tools-heading">
+  <div class="container">
+
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">Learn, listen and share</span>
+        <h2 id="coffee-tools-heading">Go deeper into the cup.</h2>
+        <p>
+          Explore coffee through two third-party widgets: a YouTube tasting
+          guide and a Spotify coffeehouse playlist.
+        </p>
       </div>
-    </section>
+    </div>
+
+    <div class="plugin-grid">
+
+      <!-- Plugin 1: YouTube -->
+      <article class="plugin-card">
+        <iframe
+          title="YouTube coffee tasting guide"
+          src="https://www.youtube-nocookie.com/embed/kEZZCQTSSAg"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                 gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+        <div class="plugin-copy">
+          <span class="badge">Plugin 1 · YouTube</span>
+          <h3>Coffee tasting guide</h3>
+          <p>
+            This embedded YouTube widget introduces aroma, acidity,
+            sweetness and body to help customers better understand
+            different coffee profiles.
+          </p>
+        </div>
+      </article>
+
+      <!-- Plugin 2: Spotify -->
+      <article class="plugin-card">
+        <iframe
+          title="Spotify coffeehouse playlist"
+          src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9RwfGbeGQwP?utm_source=generator"
+          loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media;
+                 fullscreen; picture-in-picture">
+        </iframe>
+
+        <div class="plugin-copy">
+          <span class="badge">Plugin 2 · Spotify</span>
+          <h3>Coffeehouse playlist</h3>
+          <p>
+            This embedded Spotify widget adds a relaxed coffeehouse
+            atmosphere while customers browse Bean Boutique's coffee
+            selection.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Extra interactive feature: not counted as one of the two plugins -->
+    <div class="share-panel share-panel--standalone">
+      <span class="badge">Extra interactive feature</span>
+      <h3>Share a good thing.</h3>
+
+      <p>
+        Share the Bean Boutique coffee collection using the browser's
+        native sharing feature or send the page by email.
+      </p>
+
+      <div class="share-actions">
+        <button
+          class="btn btn--dark"
+          type="button"
+          data-share-coffee
+          aria-label="Share the Bean Boutique coffee collection">
+          Share the collection
+          <span aria-hidden="true">↗</span>
+        </button>
+
+        <button
+          class="btn btn--outline"
+          type="button"
+          data-share-email>
+          Send by email
+        </button>
+      </div>
+
+      <p
+        class="share-status"
+        data-share-status
+        aria-live="polite">
+      </p>
+    </div>
+
+  </div>
+</section>
 
     <!-- Practical brewing guide -->
     <section class="section section--oat" aria-labelledby="brew-guide-heading">
